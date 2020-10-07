@@ -151,16 +151,6 @@ header nav ul li a{
 .section-two, .section-three {
     padding: 10px 0px;
 }
-/*
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
-*/
 .menu {
 	list-style: none;
 	padding: 0;
@@ -188,10 +178,35 @@ footer {
 	border-top: 3px solid #eee;
 	margin: 10px auto 0px auto;
 	text-align: center;
+  width: 90%;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+@media screen and (min-width: 768px) {
+    .bottom-section {
+        border: 1px solid #eee;
+        border-width: 1px 0px;
+        align-items: flex-start;
+    }
+    .section-one, .section-two, .section-three {
+      width: 33.3%;
+      border: none;
+    }
+    .section-two {
+	      border-left: 1px solid #eee;
+	      border-right: 1px solid #eee;
+        box-sizing: border-box;
+    }
+    .section-two,  .section-three{
+	      padding: 10px 30px;
+        box-sizing: border-box
+    }
+    footer {
+        border: none;
+    }
 }
