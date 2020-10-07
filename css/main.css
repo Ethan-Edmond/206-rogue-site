@@ -133,7 +133,6 @@ header nav ul li a{
 /***** Bottom-Section *****/
 
 .bottom-section {
-    background: red;
     display: flex;
     flex-flow: row wrap;
     width: 90%;
@@ -141,7 +140,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 20%;
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
@@ -149,16 +148,19 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
+.section-two, .section-three {
+    padding: 10px 0px;
+}
+/*
 .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 }
-
 .section-two h4,
 .section-three h4 {
 	padding: 10px 30px;
 }
-
+*/
 .menu {
 	list-style: none;
 	padding: 0;
@@ -172,17 +174,19 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+  padding: 0px;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+  padding: 0px;
 }
 
 /*The widths are in a percentage!*/
 footer {
 	border-top: 3px solid #eee;
-	margin: 0 auto;
+	margin: 10px auto 0px auto;
 	text-align: center;
 }
 footer span {
