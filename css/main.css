@@ -231,7 +231,8 @@ footer span {
         border: none;
         text-align: left;
     }
-    header nav ul li {
-        display: inline;
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
     }
 }
