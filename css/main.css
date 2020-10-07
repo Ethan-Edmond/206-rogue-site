@@ -57,6 +57,7 @@ p {
 header {
 	margin: 0 auto;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 header h1 {
@@ -72,7 +73,9 @@ header h1 span {
 }
 
 header nav {
+  width: 90%;
 	padding: 20px 0;
+  text-align: center;
 }
 header nav ul {
 	margin: 0;
@@ -188,6 +191,10 @@ footer span {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
     .bottom-section {
         border: 1px solid #eee;
         border-width: 1px 0px;
