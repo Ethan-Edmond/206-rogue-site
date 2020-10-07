@@ -116,7 +116,8 @@ header nav ul li a{
 .main-image img {
 	width: 100%;
   box-sizing: border-box;
-	border-bottom: 3px solid #77a466;
+	border: 3px solid #77a466;
+  border-width: 3px 0px;
 }
 
 .main-title {
@@ -215,5 +216,22 @@ footer span {
     }
     footer {
         border: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        width: 90%;
+        margin-top: 40px;
+    }
+    header h1, header nav {
+        width: 50%;
+    }
+    header h1 {
+        border: none;
+        text-align: left;
+    }
+    header nav ul li {
+        display: inline;
     }
 }
